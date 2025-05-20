@@ -5,7 +5,7 @@ const Header = () => {
     const [doctorInfo, setDoctorInfo] = useState(null);
 
     useEffect(() => {
-        fetch("../../public/Doctor.json")
+        fetch("../assets/Doctor.json")
             .then((res) => res.json())
             .then((data) => setDoctorInfo(data))
             .catch((error) => console.error("Failed to fetch doctor info:", error));
