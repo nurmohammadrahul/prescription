@@ -1,0 +1,14 @@
+{
+    "doctors":[
+        {
+            "id": 1,
+            "name": "Prof. Dr. Md. Anwarul Karim",
+            "title": "Professor & Chairman, Pediatric Hematology & Oncology"
+        },
+        {
+            "id": 2,
+            "name": "Dr. Sabiha Jahan",
+            "title": "Associate Professor, Internal Medicine"
+        }
+    ]
+}
