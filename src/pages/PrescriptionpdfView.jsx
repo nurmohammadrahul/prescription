@@ -34,13 +34,11 @@ const PrescriptionpdfView = () => {
 
     return (
         <div className="max-w-[840px] mx-auto my-4 md:mt-[50px] bg-white border border-gray-200 shadow-lg p-4 print:shadow-none print:border-none">
-            {/* Header Image */}
             <div className="header mb-2">
                 <img src={headImg} alt="Clinic Header" className="w-full" />
             </div>
             <hr className="border-t border-gray-300 mb-4" />
-            <div className="content flex flex-col md:flex-row gap-6 print:flex-row">
-                {/* Left Side content */}
+            <div className="content flex flex-col md:flex-row gap-6 print:flex-row">      {/* Left Side content */}
                 <div className="left-sidebar w-full md:w-1/3 print:w-1/3 pr-4">
                     <div className="section mb-6">
                         <h3 className="font-bold text-md">Symptoms:</h3>
@@ -55,9 +53,7 @@ const PrescriptionpdfView = () => {
                         <p className="whitespace-pre-line">{prescription.advice}</p>
                     </div>
                 </div>
-                <div className="hidden md:block border-l border-gray-300"></div>
-
-                {/* Right side Content */}
+                <div className="hidden md:block border-l border-gray-300"></div>  {/* Right side Content */}
                 <div className="right-content w-full md:w-2/3 print:w-2/3 pl-4">
                     <div className="section mb-6 text-sm">
                         <p>

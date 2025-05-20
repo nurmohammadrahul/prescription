@@ -86,7 +86,6 @@ const PrescriptionView = () => {
                         </div>
                     )}
                 </div>
-
                 {/* Right Content */}
                 <div className="w-full md:w-2/3 bg-white rounded-lg shadow p-5">
                     <div className="mb-6">

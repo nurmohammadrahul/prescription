@@ -4,7 +4,6 @@ const PatientHistory = () => {
     const navigate = useNavigate();
     const { state } = useLocation();
 
-    // Default data if not passed via state
     const patient = [
         {
             id: 1,

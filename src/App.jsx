@@ -16,14 +16,9 @@ function App() {
   return (
     <Router>
       <Routes>
-        {/* Public routes */}
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
-
-        {/* PDF view (no layout) */}
         <Route path="/prescriptionpdfview" element={<PrescriptionpdfView />} />
-
-        {/* Protected routes with layout */}
         <Route element={<MainLayout />}>
           <Route path="/" element={<PrescriptionEntry />} />
           <Route path="/prescriptionview" element={<PrescriptionView />} />

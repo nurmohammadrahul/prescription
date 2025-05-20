@@ -25,7 +25,6 @@ const Header = () => {
                     animation: 'gradientBG 20s ease infinite'
                 }}
             >
-                {/* Profile Section - Centered only on mobile */}
                 <div className="flex justify-center sm:justify-start w-full sm:flex-1 mb-4 sm:mb-0">
                     <img
                         className="w-[150px] h-[150px] rounded-full border-2 border-white"
@@ -45,8 +44,6 @@ const Header = () => {
                         {doctorInfo.doctors[0]?.title}
                     </p>
                 </div>
-
-                {/* Embedded CSS for animations */}
                 <style >{`
                     @keyframes gradientBG {
                         0% { background-position: 0% 50% }

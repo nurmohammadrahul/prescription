@@ -9,7 +9,6 @@ const PrescriptionEntry = () => {
     const [isFocused1, setIsFocused1] = useState(false);
     const [isFocused2, setIsFocused2] = useState(false);
 
-    // Form state
     const [formData, setFormData] = useState({
         symptoms: '',
         tests: '',
@@ -62,14 +61,12 @@ const PrescriptionEntry = () => {
     const handleSubmit = (e) => {
         e.preventDefault();
 
-        // Prepare prescription data to pass to view
         const prescriptionData = {
             ...formData,
             medicines: medicineRows.filter(med => med.name.trim() !== ""),
             files: files
         };
 
-        // Navigate to view page with state
         navigate('/prescriptionview', { state: { prescription: prescriptionData } });
     };
 
